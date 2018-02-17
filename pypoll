@@ -1,1 +1,108 @@
+import os
+import csv
 
+# Path to collect data from the Resources folder
+election_data_1 = os.path.join('..','Resources','election_data_1.csv')
+
+#open file and set reader
+with open(file) as election_data_1
+
+reader = csv.DictReader(election_data_1)
+
+#variables
+total_votes = 0
+
+#loop through canddidates and add only unique values to set
+candidates = []
+
+candidates = set(candidates)
+
+for row in reader
+    for row["name_of_candidate"]
+        if candidates not in row 
+            candidates.append(row["name_of_candidates"]) #as it loops through, add name sof candidates not already there
+
+
+#Calculate The total number of votes cast
+def listInformation(election_data):  
+    for value in simpleList:
+        print(value)
+    print("The length of this list is... " + str(len(election_data)))
+
+#find out votes per candidate
+total_votes = str(len['Voter ID'])
+
+#calculate A complete list of candidates who received votes
+
+def candidatelist(election_data_1):
+    
+  #print output as the unique values in a set
+    output = []
+    for x in candidatelist:
+        if x not in output:
+            output.append(x)
+            print output
+            
+    mylist = [election_data]
+    myset = set(mylist)
+    print myset
+
+#calculate The percentage of votes each candidate won
+VotePercent = (int(VoterData[3])/TotalVotes)*100
+
+
+#restart process for second datasource
+
+# Path to collect data from the Resources folder
+election_data_2 = os.path.join('..','Resources','election_data_2.csv')
+
+#open file and set reader
+with open(file) as election_data_2
+
+reader = csv.DictReader(election_data_2)
+
+#variables
+total_votes_2 = 0
+
+#loop through canddidates and add only unique values to set
+candidates_2 = []
+
+candidates_2 = set(candidates_2)
+
+for row in reader
+    for row["name_of_candidate"]
+        if candidates_2 not in row 
+            candidates_2.append(row["name_of_candidates"]) #as it loops through, add name sof candidates not already there
+
+#Calculate The total number of votes cast
+def listInformation(election_data_2):  
+    for value in simpleList:
+        print(value)
+    print("The length of this list is... " + str(len(election_data_2)))
+
+#find out votes per candidate
+total_votes_2 = str(len['Voter ID'])
+
+#calculate A complete list of candidates who received votes
+
+def candidatelist_2(election_data_2):
+    
+  #print output as the unique values in a set
+    output = []
+    for x in candidatelist_2:
+        if x not in output:
+            output.append(x)
+            print output
+            
+    mylist_2 = [election_data_2]
+    myset_2 = set(mylist_2)
+    print myset_2
+
+#calculate The percentage of votes each candidate won
+VotePercent_2 = (int(VoterData[3])/TotalVotes)*100
+
+#Summary
+file_to_output = "solution_poll.txt"
+
+with open(file_to_output, "w") as txt_file:
+    txt.file.write(output)
