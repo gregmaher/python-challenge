@@ -1,1 +1,101 @@
+import os
+import csv
 
+# Path to collect data from the Resources folder
+budget_data = os.path.join('Resources', 'budget_data_1.csv')
+
+#open file and set reader
+with open(file) as bank_csv
+
+reader = csv.DictReader(bank_csv)
+
+#variables
+total_revenue = 0
+total_months = 0
+
+total_revenue = int(row['revenue'])
+previous_revenue = 0
+rev_change = int(row['revenue']) - previous_revenue
+
+greatest_increase = ["", 0]
+greatest_decrease = ["", 99999]
+
+
+#iterate through date and revenue values
+for row in reader
+    
+    #Calculate The total number of months included in the dataset
+    total_months += 1
+
+    #Calculate The average change in revenue between months over the entire period  
+    rev_average = sum(revenue_change_list)/len(revenue_change_list))
+
+    #Calculate The total amount of revenue gained over the entire period
+    (rev_change) = sum(revenue_change_list)
+   
+    #Calculate The greatest increase and decrease in revenue (date and amount) over the entire period
+    if (rev_change) > greatest_increase[1]
+        greatest_increase[0] = row["date"]
+        greatest_increase[1] = revenue_change
+         
+    if (rev_change) < greatest_decrease[1]
+        greatest_decrease[0] = row["date"]
+        greatest_decrease[1] = revenue_change
+
+#restart process for second datasource
+
+# Path to collect data from the Resources folder
+budget_data = os.path.join('Resources', 'budget_data_2.csv')
+
+#open file and set reader
+with open(file) as bank_csv_1
+
+reader = csv.DictReader(bank_csv_1)
+
+#variables
+total_revenue_1 = 0
+total_months_1 = 0
+
+total_revenue_1 = int(row['revenue'])
+previous_revenue_1 = 0
+rev_change_1 = int(row['revenue']) - previous_revenue_1
+
+greatest_increase_1 = ["", 0]
+greatest_decrease_1 = ["", 99999]
+
+
+#iterate through date and revenue values
+for row in reader
+    
+    #Calculate The total number of months included in the dataset
+    total_months_1 += 1
+
+    #Calculate The average change in revenue between months over the entire period  
+    rev_average_1 = sum(revenue_change_list_1)/len(revenue_change_list_1))
+
+    #Calculate The total amount of revenue gained over the entire period
+    (rev_change_1) = sum(revenue_change_list_1)
+   
+    #Calculate The greatest increase and decrease in revenue (date and amount) over the entire period
+    if (rev_change_1) > greatest_increase_1[1]
+        greatest_increase_1[0] = row["date"]
+        greatest_increase_1[1] = revenue_change_1
+         
+    if (rev_change_1) < greatest_decrease_1[1]
+        greatest_decrease_1[0] = row["date"]
+        greatest_decrease_1[1] = revenue_change_1
+
+
+#summary variables
+output = [total_months, total_revenue, rev_change, greatest_increase, greatest_decrease]
+
+file_to_output = "solution.txt"
+
+#summary
+print("The total months are" + str(total_months_both))    
+
+#print the analysis to the terminal 
+python [budget_results].py 
+
+with open(file_to_output, "w") as txt_file:
+    txt.file.write(output)
